@@ -39,7 +39,7 @@ public class YoilTeller_servlet {
 		int mm = Integer.parseInt(month);
 		int dd = Integer.parseInt(day);
 	
-	//2. 작업 
+	//2. 작업  (요일을 계산하는 작업)
 		// java의 calendar클래스를 통해 객체생성 
 		Calendar cal = Calendar.getInstance();
 		cal.set(yyyy,mm - 1 , dd);
