@@ -17,10 +17,14 @@
 		<item value="org.eclipse.jgit:6.4.0.202211300538-r"/>
 		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.27.0.v202208260526"/>
 		<item value="org.eclipse.jst.enterprise_ui.feature:3.28.0.v202209230232"/>
+		<item value="org.eclipse.jst.ws.axis2tools.feature:1.1.401.v201909051708"/>
 		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.5.v20221102-0933"/>
 		<item value="org.eclipse.m2e.feature:2.1.2.20221130-2239"/>
 		<item value="org.eclipse.m2e.logback.feature:2.1.0.20221015-0744"/>
 		<item value="org.eclipse.m2e.wtp.feature:1.5.2.20220906-1452"/>
+		<item value="org.eclipse.m2e.wtp.jaxrs.feature:1.5.0.20220805-2025"/>
+		<item value="org.eclipse.m2e.wtp.jpa.feature:1.5.0.20220805-2025"/>
+		<item value="org.eclipse.m2e.wtp.jsf.feature:1.5.0.20220805-2025"/>
 		<item value="org.eclipse.mylyn.wikitext.editors_feature:3.0.45.202211090110"/>
 		<item value="org.eclipse.pde:3.14.1400.v20221123-1800"/>
 		<item value="org.eclipse.platform:4.26.0.v20221123-2302"/>
