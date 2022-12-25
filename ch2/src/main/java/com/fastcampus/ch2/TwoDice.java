@@ -21,11 +21,6 @@ public class TwoDice {
 		int idx1 = (int)(Math.random()*6)+1;
 		int idx2 = (int)(Math.random()*6)+1;
 
-
-		//새로고침 할 떄 마다 사진이 바뀌게 하는 것.	
-		int idx1 = (int)(Math.random()*6)+1;
-		int idx2 = (int)(Math.random()*6)+1;
-
 			res.setContentType("text/html");
 			res.setCharacterEncoding("utf-8");
 			PrintWriter out = res.getWriter();
