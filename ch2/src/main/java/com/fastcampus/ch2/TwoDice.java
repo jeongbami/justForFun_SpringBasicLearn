@@ -15,23 +15,46 @@ public class TwoDice {
 	
 	@RequestMapping("/rollDice")
 	public void main(HttpServletResponse res) throws IOException {
+
+
 		//새로고침 할 떄 마다 사진이 바뀌게 하는 것.	
 		int idx1 = (int)(Math.random()*6)+1;
 		int idx2 = (int)(Math.random()*6)+1;
-			
+
+
+		//새로고침 할 떄 마다 사진이 바뀌게 하는 것.	
+		int idx1 = (int)(Math.random()*6)+1;
+		int idx2 = (int)(Math.random()*6)+1;
+
 			res.setContentType("text/html");
 			res.setCharacterEncoding("utf-8");
 			PrintWriter out = res.getWriter();
 			out.println("<html>");
 				out.println("<head>");
 				out.println("</head>");
+				out.println("<body>");
+						out.println("<img src='/img/dice1.jpg'> ");
+						out.println("<img src='/img/dice2.jpg'> ");
+
+					out.println("<body>"); 
+						out.println("<img src='resources/img/dice1"+idx1+".jpg'> ");
+						out.println("<img src='resources/img/dice2"+idx2+".jpg'> ");
+
+
+					out.println("<body>"); 
+						out.println("<img src='resources/img/dice1"+idx1+".jpg'> ");
+						out.println("<img src='resources/img/dice2"+idx2+".jpg'> ");
+
+					out.println("</body>");
+			out.println("</html>");
+
+
 					out.println("<body>"); 
 						out.println("<img src='resources/img/dice1"+idx1+".jpg'> ");
 						out.println("<img src='resources/img/dice2"+idx2+".jpg'> ");
 					out.println("</body>");
 			out.println("</html>");
-		
-		
+
 		/* 
 		 * web browser의 서버가 제공하는 리소스 
 		 * 	리소스
@@ -52,10 +75,7 @@ public class TwoDice {
 		 *  
 		 *  	== 이것이 웹 프로그래밍이다 .
 		 *  */
-		
-		
-		
-		
+
 		
 	}
 }
