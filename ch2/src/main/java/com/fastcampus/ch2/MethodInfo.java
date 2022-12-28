@@ -10,7 +10,7 @@ public class MethodInfo {
 		
 		
 		//1. YoilTeller 클래스의 객체를 생성.
-		Class clazz = Class.forName("com.fastcampus.ch2.YoilTellerMVC");
+		Class clazz = Class.forName("com.fastcampus.ch2.YoilTeller_servlet");
 		Object obj = clazz.newInstance();
 		
 		//2. 모든 method의 정보를 가져와 배열에 저장.

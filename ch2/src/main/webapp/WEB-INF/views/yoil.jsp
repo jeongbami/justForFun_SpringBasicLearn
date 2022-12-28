@@ -7,7 +7,7 @@
 <title>yoilTeller</title>
 </head>
 <body>
-${year }년 ${month }월 ${day}은 ${yoil }요일 입니다.
+${year}년 ${month}월 ${day}은 ${yoil}요일 입니다.
 
 </body>
 </html>
