@@ -21,7 +21,7 @@ public class YoilTellerMVC2 {
     // public static void main(String[] args) {
     // public void main(HttpServletRequest request, HttpServletResponse response) throws IOException {
     
-	@RequestMapping("/getYoilMVC") 
+	@RequestMapping("/getYoilMVC2") 
     public String main(@RequestParam(required = true)int year, 
     		@RequestParam(required = true) int month, 
     		@RequestParam(required = true) int day, Model model) throws IOException {	
