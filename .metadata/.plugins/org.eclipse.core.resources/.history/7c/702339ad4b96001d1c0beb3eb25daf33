@@ -1,0 +1,23 @@
+package com.fastcampus.ch2;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class RegisterController {
+	//@RequestMapping("/register/add", method={RequestMethod.GET, RequestMethod.POST})
+	//Method가 생략되어 있으면 GET,POST 둘 다 허용한다는 의미.
+	@GetMapping("/register/add")
+	public String register() { 
+		//신규 회원 가입 화면 
+		return "registerForm"; // WEB-INF/view/registerForm.jsp
+	}
+	
+	//@RequestMapping("/register/save" method=RequestMethod.POST)
+	@PostMapping("/register/save")
+	public String save() {
+		return "registerInfo";
+	}
+
+}
