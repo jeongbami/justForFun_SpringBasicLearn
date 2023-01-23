@@ -1,8 +1,6 @@
-INDEX VERSION 1.4+C:\Users\jsh90\OneDrive\πŸ≈¡ »≠∏È\workspace(win)\spring_basic_learn\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1189110333.index
-2308143666.index
-2834629523.index
-2415766096.index
-3518962449.index
-1619535448.index
-1791365870.index
+INDEX VERSION 1.4+/Users/JEONG/workspace/justForFun_SpringBasicLearn/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2946365637.index
+4135036194.index
+3304062471.index
+1434712363.index
+109578384.index
