@@ -8,5 +8,8 @@
 </head>
 <body>
  정확한 년,원,일 을 입력해주세요 
+ <%=application.getServerInfo() %>
+ <%= application.getMajorVersion() %>.<%= application.getMinorVersion() %>
+ <%= JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %> 
 </body>
 </html>

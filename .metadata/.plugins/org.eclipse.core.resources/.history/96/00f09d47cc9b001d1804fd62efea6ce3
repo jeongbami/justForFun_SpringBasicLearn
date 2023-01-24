@@ -1,0 +1,36 @@
+package com.fastcampus.ch2;
+
+import java.net.URLEncoder;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/login")
+public class LoginController {
+	@GetMapping("/login")
+	public String loginForm() {
+		return "loginForm";
+	}
+
+	@PostMapping("/login")
+	public String login(String id, String pwd, String rememberId) throws Exception {
+		// 1. id == pw ?
+		// 2. true => Home 화면 / false => loginForm이동
+
+		if(!loginCheck(id,pwd)) {
+			String msg = URLEncoder.encode("id 또는 password가 일치하지 않습니다", "utf-8");
+//			m.addAttribute("msg", msg);
+			return "redirect:/login/login?msg="+msg;
+		}
+			return "loginForm";
+	}
+
+	private boolean loginCheck(String id, String pwd) {
+		return false;
+	}
+
+}
