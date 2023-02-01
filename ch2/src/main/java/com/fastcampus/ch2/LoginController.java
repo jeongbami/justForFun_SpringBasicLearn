@@ -3,7 +3,10 @@ package com.fastcampus.ch2;
 import java.net.URLEncoder;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,9 +20,15 @@ public class LoginController {
 	public String loginForm() {
 		return "loginForm";
 	}
-
+	
+	@GetMapping("/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "redirect:/";
+	 	}
+	
 	@PostMapping("/login")
-	public String login(String id, String pwd, boolean rememberId, HttpServletResponse rs) throws Exception {
+	public String login(String id, String pwd, String toURL, boolean rememberId, HttpServletResponse rs, HttpServletRequest request) throws Exception {
 		System.out.println("login id = "+id);
 		System.out.println("login pwd = "+pwd);
 		System.out.println("login rememverID? = "+rememberId);
@@ -28,29 +37,39 @@ public class LoginController {
 
 		// 1. id == pw ?
 		if(!loginCheck(id,pwd)) {
-			// 2.1 false 
+			// 2.1 false -------
 			// 	1. loginForm이동
 			
 			String msg = URLEncoder.encode("id 또는 password가 일치하지 않습니다", "utf-8");
 //			m.addAttribute("msg", msg);
 			return "redirect:/login/login?msg="+msg;
 		}
-			// 2.2 true ------
+			// 2-3 id와 pw가 일치하면  세션 객체에 아이디를 저장한다.
+				//1 . 세션 객체 얻어오기
+					HttpSession session = request.getSession();
+					session.setAttribute("id",id);
+					
+					
+					// 2.2 true ------
 			// 	한단계 나아가 여기서 기억하고 싶을때는 cookie생성(즉 rememberId=true)
 				if(rememberId) {
 			// 	1. 쿠키를 생성
 				Cookie cookie = new Cookie("id",id);
 			// 	2. 응답에 저장
 				rs.addCookie(cookie);
- 			//	3.  Home 화면 
 				} else {
 					// else rememberId=false 일때는 쿠키 삭제
 					Cookie cookie = new Cookie("id",id);
 					cookie.setMaxAge(0);
 					rs.addCookie(cookie);
 				}
-					return "redirect:/"; 
-					
+				// 3. home화면 이동 
+				//return "redirect:/"; 
+				
+				//toURL이 null혹은 빈문자열이면 HOME / 아닐시에는  toURL
+				toURL = toURL == null || toURL.equals("") ? "/" : toURL;
+				
+				return toURL;
 	}
 
 	private boolean loginCheck(String id, String pwd) {
