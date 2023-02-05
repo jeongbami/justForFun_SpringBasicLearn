@@ -1,0 +1,9 @@
+package com.fastcampus.ch2;
+
+<<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/35/b03692b64ea1001d1b6af109f1b77e36
+public class BoardController {
+========
+public class GlobalCatcher {
+>>>>>>>> 3840379 (macbookmerge):ch2/src/main/java/com/fastcampus/ch2/GlobalCatcher.java
+
+}
