@@ -1,18 +1,5 @@
-<<<<<<< HEAD
-INDEX VERSION 1.4+C:\Users\Ravit001\Desktop\workspace\justForFun_SpringBasicLearn\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1101021037.index
-2415766096.index
-3518962449.index
-1645802119.index
-1559255985.index
-65927765.index
-3220709478.index
-=======
-INDEX VERSION 1.4+/Users/JEONG/workspace/justForFun_SpringBasicLearn/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3236537816.index
-1434712363.index
-109578384.index
-2946365637.index
-3304062471.index
-4135036194.index
->>>>>>> 3840379 (macbookmerge)
+INDEX VERSION 1.4+C:\Users\jsh90\OneDrive\πŸ≈¡ »≠∏È\workspace(win)\justForFun_SpringBasicLearn\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2868910116.index
+429418311.index
+689102428.index
+1304058561.index

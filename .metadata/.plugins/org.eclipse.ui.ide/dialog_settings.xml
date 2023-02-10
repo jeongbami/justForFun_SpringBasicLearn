@@ -6,6 +6,7 @@
 		<item value="org.aspectj:1.9.6.202103162301"/>
 		<item value="org.eclipse.ajdt:2.2.4.202103162301"/>
 		<item value="org.eclipse.buildship:3.1.5.v20210113-0929"/>
+		<item value="org.eclipse.cdt.native:11.0.0.202211300214"/>
 		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
 		<item value="org.eclipse.egit.mylyn:5.12.0.202106070339-r"/>
 		<item value="org.eclipse.egit:5.12.0.202106070339-r"/>
@@ -30,8 +31,8 @@
 		<item value="org.eclipse.emf:2.26.0.v20210506-1425"/>
 		<item value="org.eclipse.epp.mpc:1.9.1.v20210204-1408"/>
 		<item value="org.eclipse.gef:3.11.0.201606061308"/>
-		<item value="org.eclipse.help:2.3.600.v20210611-1600"/>
-		<item value="org.eclipse.jdt:3.18.800.v20210611-1600"/>
+		<item value="org.eclipse.help:2.3.1200.v20221123-1800"/>
+		<item value="org.eclipse.jdt:3.18.1400.v20221123-1800"/>
 		<item value="org.eclipse.jgit.gpg.bc:5.12.0.202106070339-r"/>
 		<item value="org.eclipse.jgit.http.apache:5.12.0.202106070339-r"/>
 		<item value="org.eclipse.jgit.lfs:5.12.0.202106070339-r"/>
@@ -65,10 +66,10 @@
 		<item value="org.eclipse.mylyn.wikitext_feature:3.0.38.202008172112"/>
 		<item value="org.eclipse.mylyn_feature:3.25.2.v20200814-0512"/>
 		<item value="org.eclipse.pde:3.14.800.v20210611-1636"/>
-		<item value="org.eclipse.platform:4.20.0.v20210611-1600"/>
-		<item value="org.eclipse.rcp:4.20.0.v20210611-1600"/>
+		<item value="org.eclipse.platform:4.26.0.v20221123-2302"/>
+		<item value="org.eclipse.rcp:4.26.0.v20221123-2302"/>
 		<item value="org.eclipse.tm.terminal.connector.ssh.feature:10.3.0.202104042017"/>
-		<item value="org.eclipse.tm.terminal.control.feature:10.3.0.202105240049"/>
+		<item value="org.eclipse.tm.terminal.control.feature:11.0.0.202211062329"/>
 		<item value="org.eclipse.tm.terminal.feature:10.3.0.202104042017"/>
 		<item value="org.eclipse.tm.terminal.view.feature:10.3.0.202105240430"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
